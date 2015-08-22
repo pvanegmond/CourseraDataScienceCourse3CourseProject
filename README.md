@@ -1,6 +1,6 @@
 # CourseraDataScienceCourse3CourseProject
 
-This Repo is for Coursera Data Science Course 3 Course Project
+This Repo is for the course project for Course 3 of the Coursera Data Science Course.
 
 Getting and Cleaning Data
 
