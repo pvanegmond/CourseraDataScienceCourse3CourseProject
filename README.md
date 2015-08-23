@@ -33,9 +33,9 @@ Appropriately labels the data set with descriptive variable names.
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ##How to run this applicaton
-1.Download the run_analysis.R from github to your working directory
-2.The program will download the required data to the directory "./data/C3P1" for analysis
-3.The summary files will aso be created in the directroy "./data/C3P1"
+1. Download the run_analysis.R from github to your working directory
+2. The program will download the required data to the directory "./data/C3P1" for analysis
+3. The summary files will aso be created in the directroy "./data/C3P1"
 
 ##Further details
 Please see the file CodeBook.md for the full program details.
