@@ -1,6 +1,7 @@
 ##run_analysis.R
 cat("\014 run_analysis.R\n") 
 
+
 # This script does the following: 
 # 
 # 1.	Merges the training and the test sets to create one data set.
@@ -13,7 +14,7 @@ cat("\014 run_analysis.R\n")
 # Data https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 #
 
-dbug <- TRUE
+dbug <- FALSE  # Set to TRUE when debugging to keep the environment clean
 if (dbug) {
   closeAllConnections()
   rm(list=ls())
@@ -90,7 +91,7 @@ selectedCols <- c("Subject", "Activity", as.character(meanStdCols))
 selectedData <-subset(mergedData,select=selectedCols)                      # Select the required data
 selectedData <- arrange( selectedData, Subject, Activity )                 # Sort the data 
 
-write.table( selectedData, file="./data/C3P1/TidyData.csv", sep=",", row.names = FALSE)
+write.table( selectedData, file="./data/C3P1/TidyData.txt", sep=",", row.names = FALSE)
 
 
 # Summarize the data by subject and activity type.
@@ -99,7 +100,7 @@ dtData <- data.table(selectedData)
 summarisedData <-dtData[,lapply(.SD,mean),by="Subject,Activity"]
 
 # save the summarised data
-write.table( summarisedData, file="./data/C3P1/SummarisedDataApproach1.csv", sep=",", row.names = FALSE)
+write.table( summarisedData, file="./data/C3P1/SummarisedDataApproach1.txt", sep=",", row.names = FALSE)
 
 
 ## Approach 2
@@ -107,7 +108,7 @@ meltData = melt( selectedData, id = c("Subject", "Activity"))
 dataCast = dcast( meltData, Subject + Activity ~ variable, fun.aggregate=mean)
 
 # save the summarised data
-write.table( dataCast, file="./data/C3P1/SummarisedDataApproach2.csv", sep=",", row.names = FALSE)
+write.table( dataCast, file="./data/C3P1/SummarisedDataApproach2.txt", sep=",", row.names = FALSE)
 
 
 cat("run_analysis.R Finished\n") 
