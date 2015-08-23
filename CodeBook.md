@@ -99,13 +99,32 @@ datacast|Summarised data using melt & dcast
 
 ##Program Steps
 ###Data Collection
+1. Download the zip file if not already done so
+2. Unzip the file
+3. Read in the features table and fix up the column names
+4. Read in the activity labels and fix up the column names
 
 ###Data Cleaning
+ 1. Read in all the test files (x, y, subject)
+ 2. Read in all the train files (x, y, subject)
+ 3. Fix the column names for the merged data set
+ 3. Merge the test and train files into variable mergedData
 
 ###Data Pruning
+ 1. Parse the feature names and select the mean and std column names into meanStdCols
+ 2. Select the data for the specified columns into selectedData
 
 ###Summarize the data
+Two approaches were used to summarise the data and validate the summarise process.
+First approach was to use lapply and the second to use melt & dcast.
+Both returned the same results.
+
 
 ###Output the results
+File|Contents
+--------------------|--------
+TidyData.txt|Tidy data file
+SummarisedDataApproach1.csv|Summarised data using approach 1
+SummarisedDataApproach2.csv|Summarised data using approach 2
 
-Was code book submitted to GitHub that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated, along with units, and any other relevant information?
+
