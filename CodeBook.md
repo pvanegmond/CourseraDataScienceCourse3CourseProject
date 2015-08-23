@@ -75,8 +75,25 @@ Notes:
 ##Program variables
 Variable name |Contents
 --------------------|--------
-activityLables| Activity name
-features|Measured variable name
+zipFile|Local zip file name
+zipURL|URL to zip file with all the data to be analysed
+filePath|Local directory with data files
+features|Measured variables [ID, feature]
+activityLabels|Activity names [number, lable]
+xTest,xTrain|Measured values
+xBind|xTest,xTrain merged
+yTest,yTrain|Activity type  for the x values
+yBind|yTest,yTrain merged
+subjectTest,subjectTrain|Subject IDs for the x values
+subjectBind|subjectTest,subjectTrain merged
+mergedData|All x, y and subject data merged
+selectedData|subset of all the merged data
+dtData|Selected data converted to a data.table
+summarisedData|Summarised data using lapply
+meltData|Melted selected data
+datacast|Summarised data using melt & dcast
+
+
 
 
 
