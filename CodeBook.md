@@ -46,14 +46,13 @@ You will be required to submit:
  Data file https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 ###Data Set Files
 activity_labels.txt [Activity ID, Activity name]
-
 features.txt 		[Feaure ID, Feature name]
-
 features_info.txt 	Shows information about the variables used on the feature vector.
 train/X_train.txt 	Training set.
 train/y_train.txt 	Training labels.
 test/X_test.txt 	Test set.
 test/y_test.txt 	Test labels.
+
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
