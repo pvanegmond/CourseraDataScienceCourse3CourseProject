@@ -51,10 +51,15 @@ activity_labels.txt [Activity ID, Activity name].
 features.txt 		[Feaure ID, Feature name].
 
 features_info.txt 	Shows information about the variables used on the feature vector.
+
 train/X_train.txt 	Training set.
+
 train/y_train.txt 	Training labels.
+
 test/X_test.txt 	Test set.
+
 test/y_test.txt 	Test labels.
+
 
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
