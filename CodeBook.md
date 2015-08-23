@@ -1,4 +1,4 @@
-#CodeBook
+#CodeBook.md
 
 This codebook details the code in run_analysis.R as part of the Coursera Data Science course Getting and Cleaning Data.
 
