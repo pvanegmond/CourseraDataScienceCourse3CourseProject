@@ -72,6 +72,13 @@ Notes:
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 
+##Program variables
+Variable name | Contents
+---------------|--------
+activityLables| Activity name
+features|Measured variable name
+
+
 
 ###Data Collection
 
