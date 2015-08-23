@@ -73,13 +73,14 @@ Notes:
 - Each feature vector is a row on the text file.
 
 ##Program variables
-Variable name | Contents
----------------|--------
+Variable name |Contents
+--------------------|--------
 activityLables| Activity name
 features|Measured variable name
 
 
 
+##Program Steps
 ###Data Collection
 
 ###Data Cleaning
